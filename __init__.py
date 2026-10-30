@@ -55,6 +55,8 @@ from .vsl_prompt_helper import VSLPromptHelper
 from .vsl_any_reroute import VSLAnyReroute
 from .vsl_image_size import VSLImageSize
 from .vsl_image_resize import VSLImageResize
+from .vsl_image_compare import VSLImageCompare
+from .vsl_seed import VSLSeed
 from .vsl_minmax_size import VSLMinMaxSize
 from .vsl_model_loader import VSLModelLoader
 from .vsl_style_selector import VSLStyleSelector
@@ -65,6 +67,8 @@ NODE_CLASS_MAPPINGS = {
     "vsl_any_reroute": VSLAnyReroute,
     "vsl_image_size": VSLImageSize,
     "vsl_image_resize": VSLImageResize,
+    "vsl_image_compare": VSLImageCompare,
+    "vsl_seed": VSLSeed,
     "vsl_minmax_size": VSLMinMaxSize,
     "vsl_model_loader": VSLModelLoader,
     "vsl_Style_Selector": VSLStyleSelector,
@@ -76,6 +80,8 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "vsl_any_reroute": "VSL Any Reroute",
     "vsl_image_size": "VSL Image Size",
     "vsl_image_resize": "VSL Image Resize",
+    "vsl_image_compare": "vsl_image_compare",
+    "vsl_seed": "vsl_seed",
     "vsl_minmax_size": "VSL Min/Max Size",
     "vsl_model_loader": "VSL Model Loader (Presets)",
     "vsl_Style_Selector": "vsl_Style_Selector",
