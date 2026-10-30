@@ -6,7 +6,25 @@
 
 ## Установка
 
-Скопировать каталог в `ComfyUI/custom_nodes/` и перезапустить ComfyUI.
+Через git clone (рекомендуется — потом легко обновляться):
+
+```
+cd ComfyUI/custom_nodes
+git clone https://github.com/KiberSlesar/vsl_node.git
+```
+
+Перезапустите ComfyUI — ноды появятся в меню категорий `VSL/...`.
+
+Обновление до последней версии:
+
+```
+cd ComfyUI/custom_nodes/vsl_node
+git pull
+```
+
+Можно и просто скопировать каталог в `ComfyUI/custom_nodes/` — результат тот же.
+
+Настраивать после установки ничего не обязательно: пресеты LLM, настройки моделей и избранное создаются автоматически при первом использовании. При желании скопируйте шаблоны `*.example` в файлы без суффикса `.example` — например, `vsl_router_presets.json.example` → `vsl_router_presets.json`.
 
 ## Ноды
 

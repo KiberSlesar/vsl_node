@@ -6,7 +6,25 @@ A pack of custom ComfyUI nodes: LLM-powered prompt generation, a visual style ga
 
 ## Installation
 
-Copy the directory into `ComfyUI/custom_nodes/` and restart ComfyUI.
+Via git clone (recommended — easy to update later):
+
+```
+cd ComfyUI/custom_nodes
+git clone https://github.com/KiberSlesar/vsl_node.git
+```
+
+Restart ComfyUI — the nodes will appear under the `VSL/...` categories.
+
+Updating to the latest version:
+
+```
+cd ComfyUI/custom_nodes/vsl_node
+git pull
+```
+
+You can also simply copy the directory into `ComfyUI/custom_nodes/` — the result is the same.
+
+Nothing needs to be configured after installation: LLM presets, model settings and favorites are created automatically on first use. Optionally copy the `*.example` templates to files without the `.example` suffix — e.g. `vsl_router_presets.json.example` → `vsl_router_presets.json`.
 
 ## Nodes
 
