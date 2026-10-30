@@ -21,9 +21,10 @@ def _new_random_seed():
 class VSLSeed:
     CATEGORY = "VSL"
     DESCRIPTION = (
-        "Seed with buttons: random / +1 / -1 / use last. Via the API the special "
-        "values -1 (random), -2 (increment), -3 (decrement) generate a server-side "
-        "seed which is written back into the workflow metadata."
+        "Seed in the rgthree manner: Randomize Each Time (seed -1, a fresh random "
+        "seed per run), New Fixed Random, and Use Last Queued Seed. Via the API the "
+        "special values -1 (random), -2 (increment), -3 (decrement) generate a "
+        "server-side seed which is written back into the workflow metadata."
     )
 
     @classmethod

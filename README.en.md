@@ -53,7 +53,7 @@ Like VSL Image Size, but with a multiplication coefficient: takes the input imag
 A/B comparison of two images on one gray panel: the seam follows the pointer (SLIDE), or the A/B buttons flip the whole picture. `image_a` passes through unchanged, so the node can sit mid-graph. Previews go to the temp folder and don't pollute outputs.
 
 ### vsl_seed
-Seed with buttons: 🎲 Random, +1, -1, ♻ Last (restore the previous seed). Magic values `-1` (random), `-2` (increment), `-3` (decrement) work via the API too — the server generates a seed and writes it back into the workflow metadata.
+A seed in the rgthree manner: **🎲 Randomize Each Time** (a fresh random seed per run, seed = −1), **🎲 New Fixed Random** (freeze a new random seed) and **♻️ (Use Last Queued Seed)** (restore the previous run's seed). Magic values `-1`/`-2`/`-3` work via the API — the server generates a seed and writes it back into the workflow metadata.
 
 ### VSL Min/Max Size
 Picks the larger or smaller of width/height (a `max` / `min` switch) and outputs it as a single number. Handy for automatic size adjustment.
