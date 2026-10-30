@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# local backups and temp
+*.bak*
+*.tmp
+
+# removed/dead files
+_removed_*/
+
+# local settings & secrets (copy from *.example)
+vsl_router_presets.json
+vsl_model_presets.json
+vsl_style_favorites.json
+
+# unused source datasets
+anima-1.0.csv
+tags_filtered_basic.json
