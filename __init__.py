@@ -54,6 +54,7 @@ async def vsl_style_favorites_toggle(request):
 from .vsl_prompt_helper import VSLPromptHelper
 from .vsl_any_reroute import VSLAnyReroute
 from .vsl_image_size import VSLImageSize
+from .vsl_image_resize import VSLImageResize
 from .vsl_minmax_size import VSLMinMaxSize
 from .vsl_model_loader import VSLModelLoader
 from .vsl_style_selector import VSLStyleSelector
@@ -63,6 +64,7 @@ NODE_CLASS_MAPPINGS = {
     "vsl_prompt_helper": VSLPromptHelper,
     "vsl_any_reroute": VSLAnyReroute,
     "vsl_image_size": VSLImageSize,
+    "vsl_image_resize": VSLImageResize,
     "vsl_minmax_size": VSLMinMaxSize,
     "vsl_model_loader": VSLModelLoader,
     "vsl_Style_Selector": VSLStyleSelector,
@@ -73,6 +75,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "vsl_prompt_helper": "VSL Prompt Helper",
     "vsl_any_reroute": "VSL Any Reroute",
     "vsl_image_size": "VSL Image Size",
+    "vsl_image_resize": "VSL Image Resize",
     "vsl_minmax_size": "VSL Min/Max Size",
     "vsl_model_loader": "VSL Model Loader (Presets)",
     "vsl_Style_Selector": "vsl_Style_Selector",
